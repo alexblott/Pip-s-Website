@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Conditions & Procedures — Dr Pippa Robertson</title>
+<meta name="description" content="Conditions treated and procedures performed by Dr Pippa Robertson, including laparoscopic excision of endometriosis, hysterectomy, myomectomy and hysteroscopy.">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Public+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+.toggle-row { display: flex; gap: 10px; margin: 2.5rem 0 0; }
+.toggle-note { font-size: 13.5px; color: var(--taupe); margin-top: 1rem; }
+.cond-section { scroll-margin-top: calc(var(--nav-h) + 1rem); }
+.item-block { background: white; border: 1px solid var(--line); border-radius: var(--radius-card); padding: 2.25rem; margin-bottom: 1.25rem; scroll-margin-top: calc(var(--nav-h) + 1.5rem); }
+.item-block h3 { font-family: var(--font-display); font-size: 21px; font-weight: 400; color: var(--charcoal); margin-bottom: 0.6rem; }
+.item-block p { font-size: 14.5px; line-height: 1.8; margin-bottom: 0.75rem; }
+.item-links { margin-top: 1rem; display: flex; gap: 1.25rem; flex-wrap: wrap; }
+.item-links a { font-size: 12.5px; font-weight: 500; letter-spacing: 0.04em; color: var(--plum); text-decoration: none; border-bottom: 1px solid var(--blush-deep); padding-bottom: 1px; }
+.item-links a:hover { border-color: var(--plum); }
+.rel-label { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--taupe); margin-right: 4px; }
+</style>
+</head>
+<body>
+<nav class="site-nav">
+  <a class="nav-logo" href="index.html">Dr Pippa <em>Robertson</em><span class="nav-logo-sub">Gynaecologist · Perth</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="procedures.html" class="active">Procedures</a></li><li><a href="for-patients.html">For Patients</a></li><li><a href="refer.html">Refer</a></li>
+    <li><a href="contact.html" class="nav-cta">Contact</a></li>
+  </ul>
+  <button class="nav-hamburger" id="nav-hamburger" aria-label="Menu" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-nav" id="mobile-nav">
+  <a href="index.html">Home</a><a href="about.html">About</a><a href="procedures.html" class="active">Procedures</a><a href="for-patients.html">For Patients</a><a href="refer.html">Refer</a>
+  <a href="contact.html" class="mobile-cta">Contact</a>
+</div>
+
+<div class="page-header">
+  <p class="page-header-eyebrow">Procedures</p>
+  <h1>Conditions &amp; <em>procedures</em></h1>
+  <p class="page-header-sub">Two ways in: browse by the condition you're managing, or go straight to the procedure you've been advised about. Everything cross-linked, everything in plain language.</p>
+  <div class="toggle-row">
+    <a href="#conditions" class="btn-outline">Conditions treated</a>
+    <a href="#procedures-list" class="btn-outline">Procedures performed</a>
+  </div>
+</div>
+
+<section class="cond-section" id="conditions">
+  <p class="eyebrow">Conditions Treated</p>
+  <h2 class="h2">Start with your <em>diagnosis</em></h2>
+  <div style="margin-top:2.5rem">
+    <div class="item-block" id="endometriosis"><h3>Endometriosis & Pelvic Pain</h3><p>Endometriosis occurs when tissue similar to the lining of the uterus grows outside it, commonly causing pelvic pain, painful periods, and sometimes difficulty conceiving. Pelvic pain has many possible causes and deserves thorough, unhurried assessment.</p><p style="color:var(--taupe);font-size:13px">[Stage 5 — expand: diagnosis approach, treatment options overview.]</p><div class="item-links"><span class="rel-label">Related procedures:</span><a href="#laparoscopic-excision">Laparoscopic excision of endometriosis</a></div></div><div class="item-block" id="fibroids"><h3>Fibroids</h3><p>Fibroids are non-cancerous growths of the uterus. Many cause no symptoms; others cause heavy bleeding, pressure symptoms or pain. Treatment ranges from monitoring to medication to surgery.</p><p style="color:var(--taupe);font-size:13px">[Stage 5 — expand.]</p><div class="item-links"><span class="rel-label">Related procedures:</span><a href="#myomectomy">Myomectomy</a><a href="#hysterectomy">Hysterectomy</a></div></div><div class="item-block" id="bleeding"><h3>Abnormal Bleeding</h3><p>Heavy, irregular, or postmenopausal bleeding warrants proper investigation. Dr Robertson provides thorough assessment to identify the cause and the full range of treatment options.</p><p style="color:var(--taupe);font-size:13px">[Stage 5 — expand.]</p><div class="item-links"><span class="rel-label">Related procedures:</span><a href="#hysteroscopy">Hysteroscopy</a><a href="#hysterectomy">Hysterectomy</a></div></div><div class="item-block" id="cysts"><h3>Ovarian Cysts</h3><p>Ovarian cysts are common and often resolve on their own, but some require specialist assessment or surgical management — always with careful attention to ovarian function and fertility.</p><p style="color:var(--taupe);font-size:13px">[Stage 5 — expand.]</p><div class="item-links"><span class="rel-label">Related procedures:</span><a href="#ovarian-surgery">Ovarian surgery</a></div></div><div class="item-block" id="screening"><h3>Abnormal Cervical Screening Tests</h3><p>An abnormal cervical screening result can be worrying. Dr Robertson provides assessment, colposcopy where indicated, and clear guidance on what your result means and what happens next.</p><p style="color:var(--taupe);font-size:13px">[Stage 5 — expand.]</p><div class="item-links"><span class="rel-label">Related procedures:</span><a href="#cervical-surgery">Cervical surgery</a></div></div><div class="item-block" id="vulval"><h3>Vulval Disorders</h3><p>Vulval conditions — including skin disorders and persistent discomfort — are common and treatable, and deserve sensitive, specialist care.</p><p style="color:var(--taupe);font-size:13px">[Stage 5 — expand.]</p></div>
+  </div>
+</section>
+
+<section class="cond-section" id="procedures-list" style="background:var(--blush-grey);border-radius:90px 0 0 0">
+  <p class="eyebrow">Procedures Performed</p>
+  <h2 class="h2">Know your <em>operation?</em></h2>
+  <div style="margin-top:2.5rem">
+    <div class="item-block" id="laparoscopic-excision"><h3>Laparoscopic Excision of Endometriosis</h3><p>Keyhole surgery to remove (excise) endometriosis tissue, performed through small incisions with the aim of treating disease thoroughly while preserving healthy tissue.</p><div class="item-links"><span class="rel-label">Related conditions:</span><a href="#endometriosis">Endometriosis & pelvic pain</a></div></div><div class="item-block" id="hysterectomy"><h3>Hysterectomy (Removal of the Uterus)</h3><p>Surgical removal of the uterus, performed minimally invasively where possible. A significant decision made together, when it is the right option for you.</p><div class="item-links"><span class="rel-label">Related conditions:</span><a href="#fibroids">Fibroids</a><a href="#bleeding">Abnormal bleeding</a></div></div><div class="item-block" id="ovarian-surgery"><h3>Ovarian Surgery</h3><p>Surgery for ovarian cysts and other ovarian conditions, with a focus on preserving ovarian function wherever possible.</p><div class="item-links"><span class="rel-label">Related conditions:</span><a href="#cysts">Ovarian cysts</a></div></div><div class="item-block" id="myomectomy"><h3>Myomectomy (Removal of Fibroids)</h3><p>Surgical removal of fibroids while preserving the uterus — often relevant for women who wish to retain fertility.</p><div class="item-links"><span class="rel-label">Related conditions:</span><a href="#fibroids">Fibroids</a></div></div><div class="item-block" id="hysteroscopy"><h3>Hysteroscopy</h3><p>A procedure to examine the inside of the uterus using a fine telescope, used to investigate and often treat abnormal bleeding and other conditions.</p><div class="item-links"><span class="rel-label">Related conditions:</span><a href="#bleeding">Abnormal bleeding</a></div></div><div class="item-block" id="cervical-surgery"><h3>Cervical Surgery</h3><p>Procedures of the cervix, including treatment following abnormal cervical screening results.</p><div class="item-links"><span class="rel-label">Related conditions:</span><a href="#screening">Abnormal cervical screening</a></div></div><div class="item-block" id="infertility-surgery"><h3>Surgery for Infertility</h3><p>Surgical assessment and treatment of conditions that can affect fertility, including endometriosis and uterine conditions.</p><div class="item-links"><span class="rel-label">Related conditions:</span><a href="#endometriosis">Endometriosis & pelvic pain</a></div></div>
+  </div>
+  <p style="margin-top:1.5rem"><span class="note-box" style="display:inline-block">Every procedure carries individual considerations. Benefits, risks and alternatives are discussed in full at your consultation.</span></p>
+</section>
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <p class="footer-brand-name">Dr Pippa <em>Robertson</em></p>
+      <p class="footer-brand-cred">BMed(Dist) · FRANZCOG · AGES</p>
+      <p>Specialist gynaecologist in Perth, Western Australia, with extended training in complex minimally invasive surgery.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Practice</h4>
+      <a href="about.html">About</a>
+      <a href="procedures.html">Procedures</a>
+      <a href="for-patients.html">For Patients</a>
+      <a href="refer.html">Refer a Patient</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <a href="tel:0893898900">(08) 9389 8900</a>
+      <span>Fax (08) 9389 8911</span>
+      <a href="mailto:info@drpipparobertson.com">info@drpipparobertson.com</a>
+      <span>HealthLink: kkarthig</span>
+    </div>
+    <div class="footer-col">
+      <h4>Rooms</h4>
+      <span>Suite 32, Hollywood Medical Centre</span>
+      <span>85 Monash Avenue</span>
+      <span>Nedlands WA 6009</span>
+      <span>Mon–Fri 9am–4pm</span>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Dr Pippa Robertson. All rights reserved.</span>
+    <span>Gynaecology only · Private patients · GP referral required</span>
+  </div>
+</footer>
+<script>
+function toggleMenu(){document.getElementById('nav-hamburger').classList.toggle('open');document.getElementById('mobile-nav').classList.toggle('open');}
+</script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Refer a Patient — Dr Pippa Robertson</title>
+<meta name="description" content="Referral information for GPs: HealthLink kkarthig, referral requirements, gynaecology scope.">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Public+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+.hl-banner { background: var(--plum); color: white; border-radius: var(--radius-card); padding: 2.25rem 2.5rem; display: flex; justify-content: space-between; align-items: center; gap: 2rem; flex-wrap: wrap; margin-top: 2.5rem; }
+.hl-label { font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(255,255,255,0.5); margin-bottom: 4px; }
+.hl-id { font-family: var(--font-display); font-size: clamp(28px, 3.5vw, 40px); font-weight: 400; letter-spacing: 0.02em; }
+.hl-alt { text-align: right; font-size: 13.5px; color: rgba(255,255,255,0.7); line-height: 1.9; }
+.req-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2.5rem; }
+.req-list { list-style: none; }
+.req-list li { display: flex; gap: 10px; align-items: baseline; font-size: 14.5px; padding: 8px 0; border-bottom: 1px solid var(--line); }
+.req-list li:last-child { border-bottom: none; }
+.req-list li::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--plum); flex-shrink: 0; position: relative; top: -2px; }
+.scope-band { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 2.5rem; }
+@media (max-width: 860px){ .req-cols{grid-template-columns:1fr;} .scope-band{grid-template-columns:1fr;} .hl-alt{text-align:left;} }
+</style>
+</head>
+<body>
+<nav class="site-nav">
+  <a class="nav-logo" href="index.html">Dr Pippa <em>Robertson</em><span class="nav-logo-sub">Gynaecologist · Perth</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="procedures.html">Procedures</a></li><li><a href="for-patients.html">For Patients</a></li><li><a href="refer.html" class="active">Refer</a></li>
+    <li><a href="contact.html" class="nav-cta">Contact</a></li>
+  </ul>
+  <button class="nav-hamburger" id="nav-hamburger" aria-label="Menu" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-nav" id="mobile-nav">
+  <a href="index.html">Home</a><a href="about.html">About</a><a href="procedures.html">Procedures</a><a href="for-patients.html">For Patients</a><a href="refer.html" class="active">Refer</a>
+  <a href="contact.html" class="mobile-cta">Contact</a>
+</div>
+
+<div class="page-header">
+  <p class="page-header-eyebrow">For Referrers</p>
+  <h1>Refer a <em>patient</em></h1>
+  <p class="page-header-sub">Gynaecology referrals only. Private patients. Everything you need is on this page.</p>
+</div>
+
+<section>
+  <div class="hl-banner">
+    <div>
+      <p class="hl-label">HealthLink EDI</p>
+      <p class="hl-id">kkarthig</p>
+    </div>
+    <div class="hl-alt">
+      Fax: (08) 9389 8911<br>
+      Phone: (08) 9389 8900<br>
+      info@drpipparobertson.com
+    </div>
+  </div>
+
+  <div class="req-cols">
+    <div class="card" style="padding:2.25rem">
+      <p class="eyebrow" style="margin-bottom:1rem">Referrals must include</p>
+      <ul class="req-list">
+        <li>Date of referral</li>
+        <li>Referring GP's name, address, provider number and HealthLink ID</li>
+        <li>Patient's full name, address, date of birth and contact number</li>
+        <li>Reason for referral</li>
+      </ul>
+    </div>
+    <div class="card" style="padding:2.25rem">
+      <p class="eyebrow" style="margin-bottom:1rem">If available, please include</p>
+      <ul class="req-list">
+        <li>Patient's Medicare number</li>
+        <li>Private health fund details</li>
+        <li>Patient's email address</li>
+        <li>Relevant imaging, pathology and prior correspondence</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="note-box" style="margin-top:2rem">All referrals are reviewed and triaged by Dr Robertson before an appointment is booked. Once triaged, our staff will notify the patient when to contact the clinic to schedule.</div>
+</section>
+
+<section style="background:var(--blush-grey);border-radius:90px 0 0 0" class="section-tight">
+  <p class="eyebrow">Scope</p>
+  <h2 class="h2">Referral <em>scope</em></h2>
+  <div class="scope-band">
+    <div class="card"><h3>Gynaecology only</h3><p>Dr Robertson does not practice obstetrics. Please direct obstetric referrals elsewhere.</p></div>
+    <div class="card"><h3>Private patients</h3><p>Private health insurance is required. Uninsured patients cannot currently be offered appointments.</p></div>
+    <div class="card"><h3>Conditions &amp; procedures</h3><p>Endometriosis and pelvic pain, fibroids, abnormal bleeding, ovarian cysts, abnormal cervical screening, vulval disorders. <a href="procedures.html" style="color:var(--plum)">Full list →</a></p></div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <p class="footer-brand-name">Dr Pippa <em>Robertson</em></p>
+      <p class="footer-brand-cred">BMed(Dist) · FRANZCOG · AGES</p>
+      <p>Specialist gynaecologist in Perth, Western Australia, with extended training in complex minimally invasive surgery.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Practice</h4>
+      <a href="about.html">About</a>
+      <a href="procedures.html">Procedures</a>
+      <a href="for-patients.html">For Patients</a>
+      <a href="refer.html">Refer a Patient</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <a href="tel:0893898900">(08) 9389 8900</a>
+      <span>Fax (08) 9389 8911</span>
+      <a href="mailto:info@drpipparobertson.com">info@drpipparobertson.com</a>
+      <span>HealthLink: kkarthig</span>
+    </div>
+    <div class="footer-col">
+      <h4>Rooms</h4>
+      <span>Suite 32, Hollywood Medical Centre</span>
+      <span>85 Monash Avenue</span>
+      <span>Nedlands WA 6009</span>
+      <span>Mon–Fri 9am–4pm</span>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Dr Pippa Robertson. All rights reserved.</span>
+    <span>Gynaecology only · Private patients · GP referral required</span>
+  </div>
+</footer>
+<script>
+function toggleMenu(){document.getElementById('nav-hamburger').classList.toggle('open');document.getElementById('mobile-nav').classList.toggle('open');}
+</script>
+</body>
+</html>

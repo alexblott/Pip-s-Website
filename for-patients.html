@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Patients — Dr Pippa Robertson</title>
+<meta name="description" content="Becoming a patient of Dr Pippa Robertson: referral process, what to bring, insurance requirements and FAQ.">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Public+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+.fp-steps { counter-reset: step; margin-top: 2rem; }
+.fp-step { display: flex; gap: 1.5rem; padding: 1.75rem 0; border-bottom: 1px solid var(--line); }
+.fp-step:last-child { border-bottom: none; }
+.fp-num { width: 34px; height: 34px; border-radius: 50%; background: var(--plum); color: white; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 600; flex-shrink: 0; }
+.fp-step h3 { font-family: var(--font-display); font-size: 18px; font-weight: 400; color: var(--charcoal); margin-bottom: 4px; }
+.fp-step p { font-size: 14px; line-height: 1.75; }
+.faq-item { border-bottom: 1px solid var(--line); }
+.faq-item summary { padding: 1.25rem 0; font-size: 15px; font-weight: 500; color: var(--charcoal); cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+.faq-item summary::after { content: '+'; font-family: var(--font-display); font-size: 22px; color: var(--plum); font-weight: 300; }
+.faq-item[open] summary::after { content: '–'; }
+.faq-item p { padding: 0 0 1.25rem; font-size: 14px; line-height: 1.8; max-width: 680px; }
+.checklist { list-style: none; margin-top: 1rem; }
+.checklist li { display: flex; gap: 10px; align-items: baseline; font-size: 14.5px; padding: 7px 0; }
+.checklist li::before { content: '✓'; color: var(--plum); font-weight: 600; }
+</style>
+</head>
+<body>
+<nav class="site-nav">
+  <a class="nav-logo" href="index.html">Dr Pippa <em>Robertson</em><span class="nav-logo-sub">Gynaecologist · Perth</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="procedures.html">Procedures</a></li><li><a href="for-patients.html" class="active">For Patients</a></li><li><a href="refer.html">Refer</a></li>
+    <li><a href="contact.html" class="nav-cta">Contact</a></li>
+  </ul>
+  <button class="nav-hamburger" id="nav-hamburger" aria-label="Menu" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-nav" id="mobile-nav">
+  <a href="index.html">Home</a><a href="about.html">About</a><a href="procedures.html">Procedures</a><a href="for-patients.html" class="active">For Patients</a><a href="refer.html">Refer</a>
+  <a href="contact.html" class="mobile-cta">Contact</a>
+</div>
+
+<div class="page-header">
+  <p class="page-header-eyebrow">For Patients</p>
+  <h1>What to expect, <em>step by step</em></h1>
+  <p class="page-header-sub">From referral to first appointment — everything you need to know before you arrive.</p>
+</div>
+
+<section>
+  <div class="grid-2" style="gap:4rem;align-items:start">
+    <div>
+      <p class="eyebrow">Becoming a Patient</p>
+      <h2 class="h2">The referral <em>process</em></h2>
+      <div class="fp-steps">
+        <div class="fp-step"><div class="fp-num">1</div><div><h3>See your GP</h3><p>A GP referral is required for all appointments. Your GP can send it electronically via HealthLink (<strong>kkarthig</strong>) or by fax to (08) 9389 8911.</p></div></div>
+        <div class="fp-step"><div class="fp-num">2</div><div><h3>Referral review</h3><p>Dr Robertson reviews and triages every referral personally, prioritised on clinical need.</p></div></div>
+        <div class="fp-step"><div class="fp-num">3</div><div><h3>We contact you</h3><p>Once your referral has been triaged, our team will contact you to arrange your appointment.</p></div></div>
+        <div class="fp-step"><div class="fp-num">4</div><div><h3>Your first consultation</h3><p>Held at our rooms — Suite 32, Hollywood Medical Centre, 85 Monash Avenue, Nedlands.</p></div></div>
+      </div>
+    </div>
+    <div>
+      <div class="card" style="padding:2.25rem">
+        <p class="eyebrow" style="margin-bottom:0.75rem">Please bring</p>
+        <ul class="checklist">
+          <li>Your referral (if not already sent)</li>
+          <li>Medicare card and private health insurance details</li>
+          <li>Any relevant imaging, results or reports</li>
+          <li>A list of current medications</li>
+          <li>Your questions — write them down beforehand</li>
+        </ul>
+      </div>
+      <div class="note-box" style="margin-top:1.5rem">Dr Robertson is a private specialist — <strong>private health insurance is required</strong>. Fees are discussed prior to your consultation. [Stage 5 — confirm fee wording.]</div>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--blush-grey);border-radius:0 90px 0 0">
+  <p class="eyebrow">FAQ</p>
+  <h2 class="h2">Common <em>questions</em></h2>
+  <div style="margin-top:2rem;max-width:760px">
+    <details class="faq-item"><summary>Do I need a referral?</summary><p>Yes — a current GP referral is required for all appointments, both for Medicare purposes and so Dr Robertson can review your history before you attend.</p></details>
+    <details class="faq-item"><summary>Can I be seen without private health insurance?</summary><p>Dr Robertson consults privately and private health insurance is required. Your GP can discuss public system options with you if this isn't possible.</p></details>
+    <details class="faq-item"><summary>How long will I wait for an appointment?</summary><p>Referrals are triaged on clinical need, so waiting times vary. Our team will give you an indication when we contact you. [Stage 5 — confirm wording.]</p></details>
+    <details class="faq-item"><summary>Where do I park?</summary><p>[Stage 5 — parking guidance for Hollywood Medical Centre / Monash Avenue.]</p></details>
+    <details class="faq-item"><summary>What happens after my first appointment?</summary><p>That depends entirely on your situation — it may involve investigations, a treatment plan, or scheduling a procedure. Every next step is discussed with you before it's taken.</p></details>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <p class="footer-brand-name">Dr Pippa <em>Robertson</em></p>
+      <p class="footer-brand-cred">BMed(Dist) · FRANZCOG · AGES</p>
+      <p>Specialist gynaecologist in Perth, Western Australia, with extended training in complex minimally invasive surgery.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Practice</h4>
+      <a href="about.html">About</a>
+      <a href="procedures.html">Procedures</a>
+      <a href="for-patients.html">For Patients</a>
+      <a href="refer.html">Refer a Patient</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <a href="tel:0893898900">(08) 9389 8900</a>
+      <span>Fax (08) 9389 8911</span>
+      <a href="mailto:info@drpipparobertson.com">info@drpipparobertson.com</a>
+      <span>HealthLink: kkarthig</span>
+    </div>
+    <div class="footer-col">
+      <h4>Rooms</h4>
+      <span>Suite 32, Hollywood Medical Centre</span>
+      <span>85 Monash Avenue</span>
+      <span>Nedlands WA 6009</span>
+      <span>Mon–Fri 9am–4pm</span>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Dr Pippa Robertson. All rights reserved.</span>
+    <span>Gynaecology only · Private patients · GP referral required</span>
+  </div>
+</footer>
+<script>
+function toggleMenu(){document.getElementById('nav-hamburger').classList.toggle('open');document.getElementById('mobile-nav').classList.toggle('open');}
+</script>
+</body>
+</html>

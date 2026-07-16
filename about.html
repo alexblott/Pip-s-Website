@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Dr Pippa Robertson, Gynaecologist Perth</title>
+<meta name="description" content="About Dr Pippa Robertson — BMed(Dist), FRANZCOG, AGES. Training, qualifications and philosophy of care.">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Public+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+.about-grid { display: grid; grid-template-columns: 360px 1fr; gap: 4.5rem; align-items: start; }
+.about-photo { aspect-ratio: 3/4; background: white; border-radius: 180px 180px 8px 8px; box-shadow: 0 12px 48px rgba(94,58,82,0.12); overflow: hidden; position: sticky; top: calc(var(--nav-h) + 2rem); }
+.bio p { font-size: 15px; line-height: 1.85; margin-bottom: 1.25rem; }
+.quals { margin-top: 2.5rem; border-top: 1px solid var(--line); padding-top: 2rem; }
+.qual-row { display: flex; justify-content: space-between; gap: 1.5rem; padding: 0.9rem 0; border-bottom: 1px solid var(--line); align-items: baseline; }
+.qual-row:last-child { border-bottom: none; }
+.qual-name { font-size: 14px; font-weight: 500; color: var(--charcoal); }
+.qual-detail { font-size: 13px; color: var(--taupe); text-align: right; }
+.philosophy { background: var(--blush-grey); border-radius: 0 90px 0 0; }
+.phil-quote { font-family: var(--font-display); font-style: italic; font-size: clamp(20px,2.4vw,28px); font-weight: 300; line-height: 1.5; color: var(--charcoal); max-width: 720px; padding-left: 1.5rem; border-left: 3px solid var(--plum); margin: 2rem 0; }
+.hosp-cards { margin-top: 2.5rem; }
+@media (max-width: 900px){ .about-grid{grid-template-columns:1fr;} .about-photo{position:static;max-width:300px;} .philosophy{border-radius:0 50px 0 0;} }
+</style>
+</head>
+<body>
+<nav class="site-nav">
+  <a class="nav-logo" href="index.html">Dr Pippa <em>Robertson</em><span class="nav-logo-sub">Gynaecologist · Perth</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li><li><a href="about.html" class="active">About</a></li><li><a href="procedures.html">Procedures</a></li><li><a href="for-patients.html">For Patients</a></li><li><a href="refer.html">Refer</a></li>
+    <li><a href="contact.html" class="nav-cta">Contact</a></li>
+  </ul>
+  <button class="nav-hamburger" id="nav-hamburger" aria-label="Menu" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-nav" id="mobile-nav">
+  <a href="index.html">Home</a><a href="about.html" class="active">About</a><a href="procedures.html">Procedures</a><a href="for-patients.html">For Patients</a><a href="refer.html">Refer</a>
+  <a href="contact.html" class="mobile-cta">Contact</a>
+</div>
+
+<div class="page-header">
+  <p class="page-header-eyebrow">About</p>
+  <h1>Dr Pippa <em>Robertson</em></h1>
+  <p class="page-header-sub">BMed(Dist), FRANZCOG, AGES — Gynaecologist, Perth</p>
+</div>
+
+<section>
+  <div class="about-grid">
+    <div class="about-photo">
+      <div class="photo-placeholder"><div class="ph-icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="4" stroke="#8D8184" stroke-width="1.4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8" stroke="#8D8184" stroke-width="1.4" stroke-linecap="round"/></svg></div><p>Portrait — Stage 5</p></div>
+    </div>
+    <div>
+      <div class="bio">
+        <p>Dr Pippa (Phillipa) Robertson is a gynaecologist with extended training in complex minimally invasive surgery. She is deeply committed to women's health and takes a collaborative, evidence-based approach to helping her patients address their concerns.</p>
+        <p>[Stage 5 — expanded bio: training pathway (Newcastle University, King Edward Memorial Hospital), leadership roles, special interests, research involvement. To be confirmed with Dr Robertson.]</p>
+        <p>[Stage 5 — a personal paragraph: what patients can expect from a consultation, her philosophy of care in her own words.]</p>
+      </div>
+      <div class="quals">
+        <div class="qual-row"><span class="qual-name">BMed with Distinction</span><span class="qual-detail">Newcastle University</span></div>
+        <div class="qual-row"><span class="qual-name">FRANZCOG</span><span class="qual-detail">Fellow, Royal Australian &amp; New Zealand College of Obstetricians and Gynaecologists</span></div>
+        <div class="qual-row"><span class="qual-name">AGES Qualified</span><span class="qual-detail">Australasian Gynaecological Endoscopy &amp; Surgery Society</span></div>
+        <div class="qual-row"><span class="qual-name">Extended training — complex minimally invasive surgery</span><span class="qual-detail">[Detail — Stage 5]</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="philosophy">
+  <p class="eyebrow">Philosophy of Care</p>
+  <h2 class="h2">Collaborative. <em>Evidence-based.</em> Yours.</h2>
+  <p class="phil-quote">[Stage 5 — a short statement in Dr Robertson's own words about listening, partnership, and evidence-based decision-making.]</p>
+  <p class="lede">Every treatment plan is developed together — grounded in current evidence, shaped by your circumstances and goals, and explained in plain language so you can decide with confidence.</p>
+</section>
+
+<section>
+  <p class="eyebrow">Hospitals</p>
+  <h2 class="h2">Where Dr Robertson <em>operates</em></h2>
+  <div class="grid-3 hosp-cards">
+    <div class="card"><h3>Hollywood Hospital</h3><p>Nedlands — consulting rooms are located on the Hollywood campus at Hollywood Medical Centre.</p></div>
+    <div class="card"><h3>St John of God</h3><p>Subiaco and Murdoch campuses.</p></div>
+    <div class="card"><h3>King Edward Memorial Hospital</h3><p>Western Australia's specialist women's hospital, Subiaco.</p></div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <p class="footer-brand-name">Dr Pippa <em>Robertson</em></p>
+      <p class="footer-brand-cred">BMed(Dist) · FRANZCOG · AGES</p>
+      <p>Specialist gynaecologist in Perth, Western Australia, with extended training in complex minimally invasive surgery.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Practice</h4>
+      <a href="about.html">About</a>
+      <a href="procedures.html">Procedures</a>
+      <a href="for-patients.html">For Patients</a>
+      <a href="refer.html">Refer a Patient</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <a href="tel:0893898900">(08) 9389 8900</a>
+      <span>Fax (08) 9389 8911</span>
+      <a href="mailto:info@drpipparobertson.com">info@drpipparobertson.com</a>
+      <span>HealthLink: kkarthig</span>
+    </div>
+    <div class="footer-col">
+      <h4>Rooms</h4>
+      <span>Suite 32, Hollywood Medical Centre</span>
+      <span>85 Monash Avenue</span>
+      <span>Nedlands WA 6009</span>
+      <span>Mon–Fri 9am–4pm</span>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Dr Pippa Robertson. All rights reserved.</span>
+    <span>Gynaecology only · Private patients · GP referral required</span>
+  </div>
+</footer>
+<script>
+function toggleMenu(){document.getElementById('nav-hamburger').classList.toggle('open');document.getElementById('mobile-nav').classList.toggle('open');}
+</script>
+</body>
+</html>

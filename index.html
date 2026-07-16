@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dr Pippa Robertson — Gynaecologist, Perth WA</title>
+<meta name="description" content="Dr Pippa Robertson is a Perth gynaecologist with extended training in complex minimally invasive surgery, treating endometriosis, fibroids, abnormal bleeding and more.">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Public+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+.hero { padding: calc(var(--nav-h) + 3.5rem) 6% 5rem; display: grid; grid-template-columns: 1fr 400px; gap: 5rem; align-items: center; position: relative; overflow: hidden; }
+.hero::before { content:''; position: absolute; top: 0; right: 0; bottom: 0; width: 42%; background: var(--blush-grey); border-radius: 0 0 0 120px; z-index: 0; }
+.hero-left, .hero-right { position: relative; z-index: 1; }
+.hero-eyebrow { font-size: 11.5px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--plum); margin-bottom: 1.75rem; }
+.hero h1 { font-family: var(--font-display); font-size: clamp(38px,4.5vw,60px); font-weight: 300; line-height: 1.12; color: var(--charcoal); margin-bottom: 1.5rem; }
+.hero h1 em { font-style: italic; color: var(--plum); }
+.hero-sub { font-size: 15.5px; max-width: 460px; margin-bottom: 2.5rem; line-height: 1.8; }
+.hero-btns { display: flex; gap: 14px; align-items: center; flex-wrap: wrap; }
+.hero-creds { display: flex; gap: 2rem; margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--line); }
+.hero-cred { display: flex; flex-direction: column; gap: 2px; }
+.hero-cred-val { font-family: var(--font-display); font-size: 17px; color: var(--charcoal); }
+.hero-cred-label { font-size: 10.5px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--taupe); }
+.hero-photo { aspect-ratio: 3/4; background: white; border-radius: 200px 200px 8px 8px; box-shadow: 0 12px 48px rgba(94,58,82,0.14); overflow: hidden; }
+.conditions-band { background: var(--white); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.pathway { background: var(--blush-grey); border-radius: 90px 0 0 0; }
+.pathway-steps { display: grid; grid-template-columns: repeat(3,1fr); gap: 2rem; margin-top: 3rem; }
+.pw-step { background: var(--paper); border-radius: var(--radius-card); padding: 2rem; }
+.pw-num { font-family: var(--font-display); font-style: italic; font-size: 15px; color: var(--plum); margin-bottom: 0.75rem; }
+.pw-step h3 { font-family: var(--font-display); font-size: 18px; font-weight: 400; color: var(--charcoal); margin-bottom: 0.5rem; }
+.pw-step p { font-size: 13.5px; line-height: 1.75; }
+.hosp-strip { display: flex; justify-content: center; gap: 3.5rem; flex-wrap: wrap; padding: 2.5rem 6%; background: var(--paper); }
+.hosp-item { font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--taupe); }
+.gp-band { background: var(--plum); color: white; display: flex; justify-content: space-between; align-items: center; gap: 2rem; flex-wrap: wrap; padding: 3rem 6%; }
+.gp-band h2 { font-family: var(--font-display); font-size: 26px; font-weight: 300; }
+.gp-band p { font-size: 14px; color: rgba(255,255,255,0.65); max-width: 480px; margin-top: 6px; }
+.gp-band .btn-white { background: white; color: var(--plum); font-size: 13px; font-weight: 500; text-decoration: none; padding: 14px 32px; border-radius: var(--radius-pill); white-space: nowrap; }
+@media (max-width: 860px){ .hero{grid-template-columns:1fr;gap:3rem;} .hero::before{width:100%;opacity:0.45;border-radius:0;} .hero-photo{max-width:300px;margin:0 auto;} .pathway-steps{grid-template-columns:1fr;} .pathway{border-radius:50px 0 0 0;} }
+</style>
+</head>
+<body>
+<nav class="site-nav">
+  <a class="nav-logo" href="index.html">Dr Pippa <em>Robertson</em><span class="nav-logo-sub">Gynaecologist · Perth</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">Home</a></li><li><a href="about.html">About</a></li><li><a href="procedures.html">Procedures</a></li><li><a href="for-patients.html">For Patients</a></li><li><a href="refer.html">Refer</a></li>
+    <li><a href="contact.html" class="nav-cta">Contact</a></li>
+  </ul>
+  <button class="nav-hamburger" id="nav-hamburger" aria-label="Menu" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-nav" id="mobile-nav">
+  <a href="index.html" class="active">Home</a><a href="about.html">About</a><a href="procedures.html">Procedures</a><a href="for-patients.html">For Patients</a><a href="refer.html">Refer</a>
+  <a href="contact.html" class="mobile-cta">Contact</a>
+</div>
+
+<div class="hero">
+  <div class="hero-left">
+    <p class="hero-eyebrow">Gynaecologist — Perth, WA</p>
+    <h1>Expert care,<br>with you <em>at the centre</em></h1>
+    <p class="hero-sub">Dr Pippa Robertson is a gynaecologist with extended training in complex minimally invasive surgery. Her approach is collaborative and evidence-based — your concerns heard, your options explained, your decisions respected.</p>
+    <div class="hero-btns">
+      <a href="for-patients.html" class="btn-primary">Becoming a Patient</a>
+      <a href="procedures.html" class="btn-link">Explore conditions treated</a>
+    </div>
+    <div class="hero-creds">
+      <div class="hero-cred"><span class="hero-cred-val">BMed(Dist)</span><span class="hero-cred-label">Distinction</span></div>
+      <div class="hero-cred"><span class="hero-cred-val">FRANZCOG</span><span class="hero-cred-label">Fellow</span></div>
+      <div class="hero-cred"><span class="hero-cred-val">AGES</span><span class="hero-cred-label">Qualified</span></div>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="hero-photo">
+      <div class="photo-placeholder"><div class="ph-icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="4" stroke="#8D8184" stroke-width="1.4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8" stroke="#8D8184" stroke-width="1.4" stroke-linecap="round"/></svg></div><p>Photo — Stage 5</p></div>
+    </div>
+  </div>
+</div>
+
+<section class="conditions-band">
+  <p class="eyebrow">Conditions Treated</p>
+  <h2 class="h2">Specialist care, <em>clearly explained</em></h2>
+  <p class="lede" style="margin-bottom:2.75rem">Whether you have a diagnosis, a referral, or simply symptoms that deserve answers — these are the areas Dr Robertson treats.</p>
+  <div class="grid-3">
+    <a class="card" href="procedures.html#endometriosis"><h3>Endometriosis &amp; Pelvic Pain</h3><p>Thorough assessment and evidence-based treatment, including advanced laparoscopic excision surgery.</p><span class="card-more">Learn more →</span></a>
+    <a class="card" href="procedures.html#fibroids"><h3>Fibroids</h3><p>Medical and surgical management of uterine fibroids, tailored to your symptoms and goals.</p><span class="card-more">Learn more →</span></a>
+    <a class="card" href="procedures.html#bleeding"><h3>Abnormal Bleeding</h3><p>Investigation and treatment of heavy, irregular or postmenopausal bleeding.</p><span class="card-more">Learn more →</span></a>
+    <a class="card" href="procedures.html#cysts"><h3>Ovarian Cysts</h3><p>Specialist assessment and management, with careful attention to ovarian function and fertility.</p><span class="card-more">Learn more →</span></a>
+    <a class="card" href="procedures.html#screening"><h3>Abnormal Cervical Screening</h3><p>Assessment and management following an abnormal cervical screening test result.</p><span class="card-more">Learn more →</span></a>
+    <a class="card" href="procedures.html#vulval"><h3>Vulval Disorders</h3><p>Sensitive, specialist care for a range of vulval conditions.</p><span class="card-more">Learn more →</span></a>
+  </div>
+</section>
+
+<section class="pathway">
+  <p class="eyebrow">Becoming a Patient</p>
+  <h2 class="h2">A clear path to <em>your appointment</em></h2>
+  <div class="pathway-steps">
+    <div class="pw-step"><p class="pw-num">Step one</p><h3>GP referral</h3><p>Ask your GP to send a referral — electronically via HealthLink (kkarthig) or by fax. A referral is required for all appointments.</p></div>
+    <div class="pw-step"><p class="pw-num">Step two</p><h3>Review &amp; triage</h3><p>Every referral is reviewed by Dr Robertson and prioritised on clinical need. Our team will then contact you.</p></div>
+    <div class="pw-step"><p class="pw-num">Step three</p><h3>Your consultation</h3><p>An unhurried first appointment at our Nedlands rooms — your history heard in full, your options explained clearly.</p></div>
+  </div>
+  <p style="margin-top:2rem"><span class="note-box" style="display:inline-block">Please note: Dr Robertson is a private specialist. Private health insurance is required.</span></p>
+</section>
+
+<div class="hosp-strip">
+  <span class="hosp-item">Hollywood Hospital</span>
+  <span class="hosp-item">SJOG Subiaco</span>
+  <span class="hosp-item">SJOG Murdoch</span>
+  <span class="hosp-item">King Edward Memorial</span>
+</div>
+
+<div class="gp-band">
+  <div>
+    <h2>Referring a patient?</h2>
+    <p>Gynaecology referrals via HealthLink (kkarthig) or fax (08) 9389 8911. Requirements and scope on the referral page.</p>
+  </div>
+  <a class="btn-white" href="refer.html">Referral information</a>
+</div>
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <p class="footer-brand-name">Dr Pippa <em>Robertson</em></p>
+      <p class="footer-brand-cred">BMed(Dist) · FRANZCOG · AGES</p>
+      <p>Specialist gynaecologist in Perth, Western Australia, with extended training in complex minimally invasive surgery.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Practice</h4>
+      <a href="about.html">About</a>
+      <a href="procedures.html">Procedures</a>
+      <a href="for-patients.html">For Patients</a>
+      <a href="refer.html">Refer a Patient</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <a href="tel:0893898900">(08) 9389 8900</a>
+      <span>Fax (08) 9389 8911</span>
+      <a href="mailto:info@drpipparobertson.com">info@drpipparobertson.com</a>
+      <span>HealthLink: kkarthig</span>
+    </div>
+    <div class="footer-col">
+      <h4>Rooms</h4>
+      <span>Suite 32, Hollywood Medical Centre</span>
+      <span>85 Monash Avenue</span>
+      <span>Nedlands WA 6009</span>
+      <span>Mon–Fri 9am–4pm</span>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Dr Pippa Robertson. All rights reserved.</span>
+    <span>Gynaecology only · Private patients · GP referral required</span>
+  </div>
+</footer>
+<script>
+function toggleMenu(){document.getElementById('nav-hamburger').classList.toggle('open');document.getElementById('mobile-nav').classList.toggle('open');}
+</script>
+</body>
+</html>

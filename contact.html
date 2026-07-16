@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Dr Pippa Robertson</title>
+<meta name="description" content="Contact Dr Pippa Robertson's rooms: Suite 32, Hollywood Medical Centre, 85 Monash Avenue, Nedlands WA. Phone (08) 9389 8900.">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Public+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+.contact-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 4rem; align-items: start; }
+.contact-rows { margin-top: 2rem; }
+.c-row { display: flex; gap: 1.25rem; padding: 1.1rem 0; border-bottom: 1px solid var(--line); align-items: baseline; }
+.c-row:last-child { border-bottom: none; }
+.c-label { font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--taupe); min-width: 90px; }
+.c-val { font-size: 15px; color: var(--charcoal); }
+.c-val a { color: var(--charcoal); text-decoration: none; border-bottom: 1px solid var(--blush-deep); }
+.c-val a:hover { color: var(--plum); border-color: var(--plum); }
+.map-frame { border-radius: var(--radius-card); overflow: hidden; border: 1px solid var(--line); aspect-ratio: 4/3; background: var(--blush-grey); }
+.map-frame iframe { width: 100%; height: 100%; border: 0; display: block; }
+.hours-table { width: 100%; margin-top: 1rem; border-collapse: collapse; }
+.hours-table td { padding: 8px 0; font-size: 14.5px; border-bottom: 1px solid var(--line); }
+.hours-table td:last-child { text-align: right; color: var(--charcoal); }
+@media (max-width: 860px){ .contact-grid{grid-template-columns:1fr;} }
+</style>
+</head>
+<body>
+<nav class="site-nav">
+  <a class="nav-logo" href="index.html">Dr Pippa <em>Robertson</em><span class="nav-logo-sub">Gynaecologist · Perth</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="procedures.html">Procedures</a></li><li><a href="for-patients.html">For Patients</a></li><li><a href="refer.html">Refer</a></li>
+    <li><a href="contact.html" class="nav-cta">Contact</a></li>
+  </ul>
+  <button class="nav-hamburger" id="nav-hamburger" aria-label="Menu" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-nav" id="mobile-nav">
+  <a href="index.html">Home</a><a href="about.html">About</a><a href="procedures.html">Procedures</a><a href="for-patients.html">For Patients</a><a href="refer.html">Refer</a>
+  <a href="contact.html" class="mobile-cta">Contact</a>
+</div>
+
+<div class="page-header">
+  <p class="page-header-eyebrow">Contact</p>
+  <h1>Get in <em>touch</em></h1>
+  <p class="page-header-sub">Suite 32, Hollywood Medical Centre — 85 Monash Avenue, Nedlands WA 6009</p>
+</div>
+
+<section>
+  <div class="contact-grid">
+    <div>
+      <p class="eyebrow">The Rooms</p>
+      <h2 class="h2">Contact <em>details</em></h2>
+      <div class="contact-rows">
+        <div class="c-row"><span class="c-label">Phone</span><span class="c-val"><a href="tel:0893898900">(08) 9389 8900</a></span></div>
+        <div class="c-row"><span class="c-label">Fax</span><span class="c-val">(08) 9389 8911</span></div>
+        <div class="c-row"><span class="c-label">Email</span><span class="c-val"><a href="mailto:info@drpipparobertson.com">info@drpipparobertson.com</a></span></div>
+        <div class="c-row"><span class="c-label">HealthLink</span><span class="c-val">kkarthig</span></div>
+        <div class="c-row"><span class="c-label">Address</span><span class="c-val">Suite 32, Hollywood Medical Centre,<br>85 Monash Avenue, Nedlands WA 6009</span></div>
+      </div>
+      <p class="eyebrow" style="margin-top:2.5rem">Office Hours</p>
+      <table class="hours-table">
+        <tr><td>Monday – Friday</td><td>9am – 4pm</td></tr>
+        <tr><td>Saturday – Sunday</td><td>Closed</td></tr>
+        <tr><td>Public holidays</td><td>Closed</td></tr>
+      </table>
+    </div>
+    <div>
+      <div class="map-frame">
+        <iframe src="https://www.google.com/maps?q=85+Monash+Avenue,+Nedlands+WA+6009&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map — Hollywood Medical Centre, 85 Monash Avenue, Nedlands"></iframe>
+      </div>
+      <div class="note-box" style="margin-top:1.5rem">[Stage 5 — parking and access guidance for Hollywood Medical Centre.]</div>
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <p class="footer-brand-name">Dr Pippa <em>Robertson</em></p>
+      <p class="footer-brand-cred">BMed(Dist) · FRANZCOG · AGES</p>
+      <p>Specialist gynaecologist in Perth, Western Australia, with extended training in complex minimally invasive surgery.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Practice</h4>
+      <a href="about.html">About</a>
+      <a href="procedures.html">Procedures</a>
+      <a href="for-patients.html">For Patients</a>
+      <a href="refer.html">Refer a Patient</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <a href="tel:0893898900">(08) 9389 8900</a>
+      <span>Fax (08) 9389 8911</span>
+      <a href="mailto:info@drpipparobertson.com">info@drpipparobertson.com</a>
+      <span>HealthLink: kkarthig</span>
+    </div>
+    <div class="footer-col">
+      <h4>Rooms</h4>
+      <span>Suite 32, Hollywood Medical Centre</span>
+      <span>85 Monash Avenue</span>
+      <span>Nedlands WA 6009</span>
+      <span>Mon–Fri 9am–4pm</span>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Dr Pippa Robertson. All rights reserved.</span>
+    <span>Gynaecology only · Private patients · GP referral required</span>
+  </div>
+</footer>
+<script>
+function toggleMenu(){document.getElementById('nav-hamburger').classList.toggle('open');document.getElementById('mobile-nav').classList.toggle('open');}
+</script>
+</body>
+</html>
