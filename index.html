@@ -10,9 +10,9 @@
 <style>
 .hero { padding: calc(var(--nav-h) + 3.5rem) 6% 5rem; display: grid; grid-template-columns: 1fr 400px; gap: 5rem; align-items: center; position: relative; overflow: hidden; }
 .hero::before { content:''; position: absolute; top: 0; right: 0; bottom: 0; width: 42%; background: var(--blush-grey); border-radius: 0 0 0 120px; z-index: 0; }
-.hero-left, .hero-right { position: relative; z-index: 1; }
+.hero-left, .hero-right { position: relative; z-index: 1; min-width: 0; }
 .hero-eyebrow { font-size: 11.5px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--plum); margin-bottom: 1.75rem; }
-.hero h1 { font-family: var(--font-display); font-size: clamp(30px,3.6vw,48px); font-weight: 300; line-height: 1.18; color: var(--charcoal); margin-bottom: 1.5rem; }
+.hero h1 { font-family: var(--font-display); font-size: clamp(28px,3.2vw,44px); font-weight: 300; line-height: 1.2; color: var(--charcoal); margin-bottom: 1.5rem; max-width: 620px; overflow-wrap: break-word; }
 .hero h1 em { font-style: italic; color: var(--plum); }
 .hero-sub { font-size: 15.5px; max-width: 460px; margin-bottom: 2.5rem; line-height: 1.8; }
 .hero-btns { display: flex; gap: 14px; align-items: center; flex-wrap: wrap; }
@@ -34,7 +34,7 @@
 .gp-band h2 { font-family: var(--font-display); font-size: 26px; font-weight: 300; }
 .gp-band p { font-size: 14px; color: rgba(255,255,255,0.65); max-width: 480px; margin-top: 6px; }
 .gp-band .btn-white { background: white; color: var(--plum); font-size: 13px; font-weight: 500; text-decoration: none; padding: 14px 32px; border-radius: var(--radius-pill); white-space: nowrap; }
-@media (max-width: 860px){ .hero{grid-template-columns:1fr;gap:3rem;} .hero::before{width:100%;opacity:0.45;border-radius:0;} .hero-photo{max-width:300px;margin:0 auto;} .pathway-steps{grid-template-columns:1fr;} .pathway{border-radius:50px 0 0 0;} }
+@media (max-width: 860px){ .hero{grid-template-columns:1fr;gap:3rem;} .hero::before{width:100%;opacity:0.45;border-radius:0;} .hero-photo{max-width:300px;margin:0 auto;} .hero h1{font-size:clamp(26px,6.5vw,36px);max-width:100%;} .pathway-steps{grid-template-columns:1fr;} .pathway{border-radius:50px 0 0 0;} }
 </style>
 </head>
 <body>
@@ -54,7 +54,7 @@
 <div class="hero">
   <div class="hero-left">
     <p class="hero-eyebrow">Dr Pippa Robertson</p>
-    <h1>Perth Gynaecologist —<br><em>Advanced Laparoscopic &amp; Hysteroscopic Surgery</em></h1>
+    <h1>Perth Gynaecologist — <em>Advanced Laparoscopic &amp; Hysteroscopic Surgery</em></h1>
     <p class="hero-sub">Specialist, minimally invasive care for complex gynaecological conditions.</p>
     <div class="hero-btns">
       <a href="for-patients.html" class="btn-primary">Becoming a Patient</a>
